@@ -1,20 +1,4 @@
 // 高级命令字
-#include <mach/mach.h>
-
-#include <stdlib.h>
-#include <stdarg.h>
-
-#include <CoreFoundation/CoreFoundation.h>
-#include <CoreFoundation/CFMachPort.h>
-
-#include <IOKit/IOBSD.h>
-#include <IOKit/IOKitLib.h>
-#include <IOKit/IOKitServer.h>
-
-#include <IOKit/IOCFSerialize.h>
-#include <IOKit/IOCFUnserialize.h>
-
-#include <IOKit/iokitmig.h> 	// mig generated
 #include <CoreFoundation/CoreFoundation.h>
 #ifndef _ROCKEY4_ND_32_
 #define _ROCKEY4_ND_32_
@@ -224,7 +208,7 @@
 
 
 // 错误码
-//#define ERR_SUCCESS				0 //没有错误
+#define ERR_SUCCESS				0 //没有错误
 #define ERR_NO_ROCKEY			3 //没有ROCKEY
 #define ERR_INVALID_PASSWORD	4 //有ROCKEY锁，但基本密码错
 #define ERR_INVALID_PASSWORD_OR_ID	5 //错误的密码或硬件 ID
